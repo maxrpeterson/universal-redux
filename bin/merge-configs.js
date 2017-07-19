@@ -9,7 +9,7 @@ const WebpackErrorNotificationPlugin = require('webpack-error-notification');
 
 const mergeBabel = require('./merge-babel-config');
 const baseConfig = require('../config/universal-redux.config.js');
-const webpackConfigs = require('../config/webpack.config.js');
+const webpackConfigs = require('./getWebpackConfigs');
 const baseToolsConfig = require('../config/webpack-isomorphic-tools.config.js');
 
 const isProduction = process.env.NODE_ENV === 'production';
